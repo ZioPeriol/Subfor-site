@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subfor Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f6f8;
+      color: #0A1A2F;
+      display: flex;
+      height: 100vh;
+    }
+    .sidebar {
+      background-color: #0A1A2F;
+      color: white;
+      width: 250px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .sidebar h2 {
+      color: #FFA726;
+      margin-bottom: 30px;
+    }
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      margin: 15px 0;
+      font-size: 18px;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+    .main-content {
+      flex: 1;
+      padding: 30px;
+      overflow-y: auto;
+    }
+    .welcome {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .sessions {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .session-item {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    .session-item:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>sub<span style="color:white">for</span></h2>
+  <a href="#profile">Profile</a>
+  <a href="#sessions">My Sessions</a>
+  <a href="#messages">Messages</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#logout">Logout</a>
+</div>
+
+<div class="main-content">
+  <div class="welcome">
+    <h1>Welcome, Trainer/Club!</h1>
+    <p>Manage your sessions, connect with the community, and grow your network.</p>
+  </div>
+
+  <div class="sessions">
+    <h2>Available Sessions</h2>
+    <div class="session-item">
+      <strong>Yoga Class Replacement</strong><br>
+      Location: Fitness Center X<br>
+      Time: Tomorrow, 10:00 AM
+    </div>
+    <div class="session-item">
+      <strong>CrossFit Group Session</strong><br>
+      Location: Downtown Gym<br>
+      Time: Friday, 6:00 PM
+    </div>
+    <div class="session-item">
+      <strong>Zumba Instructor Needed</strong><br>
+      Location: MoveIt Studio<br>
+      Time: Saturday, 11:30 AM
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

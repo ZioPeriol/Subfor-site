@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subfor - Complete Your Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      padding: 40px;
+    }
+    .profile-form {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .profile-form h2 {
+      text-align: center;
+      color: #0A1A2F;
+      margin-bottom: 20px;
+    }
+    .profile-form input, .profile-form textarea, .profile-form select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .profile-form button {
+      width: 100%;
+      padding: 12px;
+      background-color: #FFA726;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .profile-form button:hover {
+      background-color: #e59420;
+    }
+  </style>
+</head>
+<body>
+
+<div class="profile-form">
+  <h2>Complete Your Trainer Profile</h2>
+  <form>
+    <input type="file" accept="image/*" placeholder="Upload Profile Picture">
+    <input type="text" placeholder="Full Name" required>
+    <input type="text" placeholder="City, Country" required>
+    <input type="text" placeholder="Phone Number" required>
+    <select multiple required>
+      <option>Yoga</option>
+      <option>CrossFit</option>
+      <option>Pilates</option>
+      <option>Swimming</option>
+      <option>TRX</option>
+    </select>
+    <input type="file" accept=\"application/pdf,image/*\" placeholder=\"Upload Certifications\">
+    <textarea placeholder=\"Short Bio (max 250 characters)\" rows=\"4\"></textarea>
+    <input type=\"text\" placeholder=\"Hourly Rate (Optional)\">
+    <select required>
+      <option value=\"\">Select Travel Range</option>
+      <option value=\"5\">5 km</option>
+      <option value=\"10\">10 km</option>
+      <option value=\"20\">20 km</option>
+      <option value=\"50\">50 km</option>
+    </select>
+    <input type=\"url\" placeholder=\"Instagram Profile (optional)\">
+    <input type=\"url\" placeholder=\"LinkedIn Profile (optional)\">
+    <button type=\"submit\">Save Profile</button>
+  </form>
+</div>
+
+</body>
+</html>

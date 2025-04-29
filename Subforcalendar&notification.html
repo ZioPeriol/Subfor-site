@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subfor - Calendar & Notifications</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      padding: 30px;
+    }
+    .container {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .calendar, .notifications {
+      flex: 1;
+      min-width: 300px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0A1A2F;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    .notification-item {
+      padding: 12px;
+      border-bottom: 1px solid #eee;
+    }
+    .notification-item:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- CALENDAR SECTION -->
+  <div class="calendar">
+    <h2>Session Calendar</h2>
+    <table>
+      <tr>
+        <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+      </tr>
+      <tr>
+        <td></td><td>1</td><td>2</td><td>3</td><td>4<br><small>Yoga 10AM</small></td><td>5</td><td>6</td>
+      </tr>
+      <tr>
+        <td>7</td><td>8</td><td>9</td><td>10<br><small>CrossFit 6PM</small></td><td>11</td><td>12</td><td>13</td>
+      </tr>
+      <!-- Simplified Calendar, you can expand dynamically later -->
+    </table>
+  </div>
+
+  <!-- NOTIFICATIONS SECTION -->
+  <div class="notifications">
+    <h2>Notifications</h2>
+    <div class="notification-item">
+      ✅ Your application for \"Yoga Class\" has been accepted!
+    </div>
+    <div class="notification-item">
+      📅 New session posted: \"Zumba Class\" next Saturday.
+    </div>
+    <div class="notification-item">
+      ⭐ You received a new 5-star review!
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
